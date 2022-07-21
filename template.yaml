@@ -36,10 +36,6 @@ spec:
           ui:options:
             allowedKinds:
               - Group
-        s3_bucket:
-          title: S3 Bucket
-          type: string
-          description: AWS S3 Bucket name
     - title: Choose a location
       required:
         - repoUrl
