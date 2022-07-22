@@ -60,4 +60,4 @@ jobs:
         run: techdocs-cli generate --no-docker --verbose
 
       - name: Publish docs site
-        run: techdocs-cli publish --publisher-type awsS3 --storage-name techdocs-storage-v2 --entity default/component/backstages
+        run: techdocs-cli publish --publisher-type awsS3 --storage-name ${{'${{secrets.AWS_S3_BUCKET}}'}} --entity default/component/backstages
